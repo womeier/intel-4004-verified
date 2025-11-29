@@ -1,0 +1,27 @@
+opam-version: "2.0"
+
+homepage: "https://github.com/CharlesCNorton/intel-4004-verified"
+dev-repo: "git+https://github.com/CharlesCNorton/intel-4004-verified.git"
+bug-reports: "https://github.com/CharlesCNorton/intel-4004-verified/issues"
+license: "MIT"
+
+synopsis: "Formal Verification of the Intel 4004 Micorprocessor in Coq"
+description: """
+Port of the agdarsec total parser combinator library to Coq."""
+
+build: [make "-j%{jobs}%"]
+install: [make "install"]
+depends: [
+  "coq" {>= "8.20"}
+]
+
+tags: [
+  "keyword: hardware verification"
+  "category: Computer Science/Architecture"
+  "logpath:Intel4004"
+]
+
+maintainer: "C.Norton"
+authors: [
+  "C. Norton"
+]

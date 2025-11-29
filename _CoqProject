@@ -1,0 +1,8 @@
+-Q theories Intel4004
+
+theories/utils.v
+theories/machine.v
+theories/isa.v
+theories/semantics.v
+theories/timing.v
+theories/hoare.v
